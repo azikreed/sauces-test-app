@@ -1,0 +1,102 @@
+:root {
+  --font-family: "Manrope", sans-serif;
+  --primary-color: #020a0a;
+  --secondary-color: #787878; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family); }
+  body button {
+    cursor: pointer; }
+  body * {
+    box-sizing: border-box; }
+  body .container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; }
+    body .container .right-box {
+      min-width: 489px;
+      max-height: 600px;
+      border-radius: 25px;
+      box-shadow: 1px 1px 20px 1px rgba(12, 12, 12, 0.2);
+      padding: 32px; }
+      body .container .right-box .product-info {
+        border-bottom: 1px solid #E6E6E6;
+        margin-bottom: 24px; }
+        body .container .right-box .product-info h1 {
+          font-size: 24px;
+          margin: 0;
+          color: var(--primary-color);
+          margin-bottom: 8px; }
+        body .container .right-box .product-info p {
+          margin: 0;
+          margin-bottom: 24px; }
+      body .container .right-box .sauces-summary {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px; }
+        body .container .right-box .sauces-summary span {
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 140%;
+          color: var(--primary-color); }
+        body .container .right-box .sauces-summary .summary-details span {
+          font-size: 16px;
+          font-weight: 400; }
+      body .container .right-box .sauces {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 65px; }
+        body .container .right-box .sauces .sauce {
+          display: flex;
+          justify-content: space-between;
+          padding: 12px;
+          border-radius: 5px;
+          background: #f6f7f8;
+          color: var(--primary-color);
+          font-weight: 400; }
+          body .container .right-box .sauces .sauce .sauce-price {
+            margin-left: 8px;
+            color: var(--secondary-color); }
+          body .container .right-box .sauces .sauce div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px; }
+            body .container .right-box .sauces .sauce div button {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 0;
+              width: 24px;
+              height: 24px;
+              background: transparent;
+              border: none;
+              font-size: 24px; }
+            body .container .right-box .sauces .sauce div .quantity {
+              width: 32px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+      body .container .right-box .add-to-cart {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body .container .right-box .add-to-cart span {
+          font-size: 32px;
+          font-weight: 700; }
+        body .container .right-box .add-to-cart button {
+          padding: 20px 24px;
+          border-radius: 100px;
+          border: none;
+          width: 176px;
+          background: #de341d;
+          color: #fff;
+          font-family: var(--font-family);
+          font-size: 18px;
+          line-height: 140%;
+          font-weight: 500; }

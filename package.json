@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "watch:scss": "node-sass -w styles/style.scss styles/style.css",
+    "serve": "live-server --port=3000 --open=./index.html",
+    "start": "node js/run.js"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0"
+  }
+}
