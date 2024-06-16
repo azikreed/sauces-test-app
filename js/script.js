@@ -1,7 +1,28 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("sauces.json")
-    .then((res) => res.json())
-    .then((data) => initializeSauces(data));
+    
+const sauces = [
+    {
+        "id": 1,
+        "name": "Кетчуп",
+        "price": 60
+    },
+    {
+        "id": 2,
+        "name": "Сырный",
+        "price": 60
+    },
+    {
+        "id": 3,
+        "name": "Блю-чиз",
+        "price": 60
+    },
+    {
+        "id": 4,
+        "name": "Барбекю",
+        "price": 60
+    }
+]
+
 
   const dishPrice = 220;
 
@@ -16,9 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
       sauceElement.innerHTML = `
         <span>${sauce.name} <span class="sauce-price" id="sauce-price-${sauce.id}">+0 &#8381;</span></span>
         <div>
-            <button class="minus" data-id="${sauce.id}" data-price="${sauce.price}"><img src="/img/minus.svg" /></button>
+            <button class="minus" data-id="${sauce.id}" data-price="${sauce.price}">-</button>
             <span class="quantity" id="quantity-${sauce.id}">0</span>
-            <button class="plus" data-id="${sauce.id}" data-price="${sauce.price}"><img src="/img/plus.svg" /></button>
+            <button class="plus" data-id="${sauce.id}" data-price="${sauce.price}">+</button>
         </div>
         `;
 
@@ -104,5 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       updateDisplay();
     });
+
+    updateDisplay();
   }
+
+  initializeSauces(sauces);
 });
